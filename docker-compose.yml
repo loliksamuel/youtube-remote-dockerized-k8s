@@ -1,0 +1,26 @@
+#  version: "3"
+#services:
+
+  mongodb:
+      image: mongo:latest
+      container_name: mongodb
+      ports:
+       - "27017:27017"
+
+  yremote:
+      image: utube/remote
+      container_name: yremote
+      links:
+       - mongodb
+      ports:
+       - "3000:3000"
+
+  ynginx:
+      image: utube/nginx
+      container_name: ynginx
+      links:
+       - yremote
+      ports:
+       - "80:80"
+       - "443:443"
+       - "81:81"
