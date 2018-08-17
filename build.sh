@@ -19,9 +19,12 @@ echo "WORKSPACE=$WORKSPACE"
 echo "Build ynginx image for version ${YR_VERSION}"
 cd ${WORKSPACE}/ynginx
 docker build -t ${DOCKER_REGISTRY}/yremote/ynginx:${YR_VERSION} .
+#docker build -t localhost:5000/yremote/ynginx:2018 .
 docker push ${DOCKER_REGISTRY}/yremote/ynginx:${YR_VERSION}
 echo
 echo "Build yremote image for version ${YR_VERSION}"
 cd ${WORKSPACE}/yremote
 docker build -t ${DOCKER_REGISTRY}/yremote/yremote:${YR_VERSION} .
+#docker build -t localhost:5000/yremote/yremote:2018 .
+#23
 docker push ${DOCKER_REGISTRY}/yremote/yremote:${YR_VERSION}
