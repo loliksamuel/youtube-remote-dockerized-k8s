@@ -2,22 +2,22 @@
 #services:
 
   mongodb:
-      image: mongo:latest
-      container_name: mongodb
+      image: mongo
+
       ports:
        - "27017:27017"
 
   yremote:
-      image: utube/remote
-      container_name: yremote
+      image: localhost:5000/utube/yremote:2018
+
       links:
        - mongodb
       ports:
        - "3000:3000"
 
   ynginx:
-      image: utube/nginx
-      container_name: ynginx
+      image: localhost:5000/utube/ynginx:2018
+
       links:
        - yremote
       ports:
