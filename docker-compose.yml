@@ -7,13 +7,7 @@
       ports:
        - "27017:27017"
 
-  yremote:
-      image: localhost:5000/utube/yremote:2018
 
-      links:
-       - mongodb
-      ports:
-       - "3000:3000"
 
   ynginx:
       image: localhost:5000/utube/ynginx:2018
@@ -24,3 +18,12 @@
        - "80:80"
        - "443:443"
        - "81:81"
+
+
+   yremote:
+       image: localhost:5000/utube/yremote:2018
+
+       links:
+        - mongodb
+       ports:
+        - "3000:3000"
