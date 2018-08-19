@@ -30,12 +30,14 @@ kubernetes
 ---------
 install minikube
 
-minikube start
+minikube --memory=4096 start
 
 kubectl create -f yremote-deployment+service.yaml
 
 kubectl get deployments, services, pods
 
 minikube dashboard
+
+http://192.168.99.100:30000/#!/overview?namespace=default
 
 minikube stop
