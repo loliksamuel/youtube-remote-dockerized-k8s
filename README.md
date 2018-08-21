@@ -39,7 +39,7 @@ or
 kubectl get nodes
 ```
 
-- deply using kebernetes
+- deply using kebernetes or helm.sh
 ```sh
 kubectl create -f yremote-deployment-service.yaml
 if u need ... kubectl delete service yremoteservice
