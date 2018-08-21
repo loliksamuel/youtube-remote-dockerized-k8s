@@ -7,7 +7,7 @@ spec:
   - protocol: "TCP"
     port: 3000
     targetPort: 3001
-    nodePort: 30011
+    nodePort: 30012
   selector:
     app: yremote
   type: LoadBalancer
