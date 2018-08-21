@@ -1,5 +1,10 @@
 youtube-remote
 ---------------------
+
+The following repo was designed to demonstrate docker and kubernetes functionality. 
+Starting from few docker files ... into minikube ... and scaling into a "full-blown" cluster, 
+
+
 docker
 ------------------
 cd ynginx
