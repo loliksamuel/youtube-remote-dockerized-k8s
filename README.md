@@ -9,10 +9,8 @@ docker
 ------------------
 - cd ynginx
 - docker build -t localhost:5000/utube/ynginx:2018 .
-
 - cd ../yremote
 - docker build -t localhost:5000/utube/yremote:2018 .
-
 - cd ..
 - docker-compose up -d
 
