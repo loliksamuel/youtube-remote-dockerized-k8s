@@ -24,11 +24,11 @@ run
 
 kubernetes
 ---------
-- install minikube
-- minikube --memory=4096 start
+- create the cluster : using minikube start or kops create cluster --name=useast1.k8s.appychip.vpc --cloud=aws --zones=us-east-1d --dns-zone=appychip.vpc --dns private
+- validate the cluster exists   : kubectl cluster-info
 - kubectl create -f yremote-deployment-service.yaml
 - if u need ... kubectl delete service yremoteservice
 - kubectl get deployments,services,pods
 - minikube dashboard
 - http://192.168.99.100:30000/#!/overview?namespace=default
-- minikube stop
+- stop the cluster: using minikube stop or kops delete cluster --name=useast1.k8s.appychip.vpc --yes
