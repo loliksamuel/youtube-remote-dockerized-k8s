@@ -38,12 +38,18 @@ kubectl cluster-info
 or 
 kubectl get nodes
 ```
-- kubectl create -f yremote-deployment-service.yaml
-- if u need ... kubectl delete service yremoteservice
-- kubectl get deployments,services,pods
-- minikube dashboard
-- http://192.168.99.100:30000/#!/overview?namespace=default
+
+- deply using kebernetes
+```sh
+kubectl create -f yremote-deployment-service.yaml
+if u need ... kubectl delete service yremoteservice
+kubectl get deployments,services,pods
+minikube dashboard
+http://192.168.99.100:30000/#!/overview?namespace=default
+```
 - stop the cluster: using 
 ```sh
-minikube stop or kops delete cluster --name=useast1.k8s.appychip.vpc --yes
+minikube stop 
+or 
+kops delete cluster --name=useast1.k8s.appychip.vpc --yes
 ```
