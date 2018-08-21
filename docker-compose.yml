@@ -1,10 +1,10 @@
-#  version: "3"
-#services:
+version: '3.1'
 
-  mongodb:
-      image: mongo
+services:
 
-      ports:
+  mongo:
+    image: mongo
+    ports:
        - "27017:27017"
 
 
@@ -20,10 +20,10 @@
        - "81:81"
 
 
-   yremote:
+  yremote:
        image: localhost:5000/utube/yremote:2018
 
        links:
-        - mongodb
+        - mongo
        ports:
         - "3000:3000"
