@@ -88,7 +88,7 @@ spec:
         image: img-utube-nginx:2018
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 80
+          - containerPort: 8080
 #       livenessProbe:
 #          initialDelaySeconds: 5
 #          periodSeconds: 5
@@ -104,14 +104,10 @@ kind: Service
 metadata:
   name: ynginx
 spec:
-  selector:
-    app: mongo
-    tier: ynginx
   ports:
   - nodePort: 32766
     port: 80
-    targetPort: 80
+    targetPort: 8080
   selector:
-    app: yremote
-    tier: ynginx
+      app: ynginx
   type: NodePort
