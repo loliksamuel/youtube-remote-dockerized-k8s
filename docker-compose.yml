@@ -11,7 +11,7 @@ services:
 
   ynginx:
       image: img-utube-nginx:2018
-      links:
+      depends_on:
        - yremote
       ports:
        - "80:80"
@@ -21,7 +21,7 @@ services:
 
   yremote:
        image: img-utube-remote:2018
-       links:
+       depends_on:
         - mongo
        ports:
         - "3000:3000"
