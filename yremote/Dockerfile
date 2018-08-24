@@ -1,5 +1,5 @@
 FROM node:5.1.1 
-MAINTAINER Liya Katz <liya@tikalk.com> 
+MAINTAINER samuel cardonis
 
 RUN apt-get update && apt-get install -y git
 

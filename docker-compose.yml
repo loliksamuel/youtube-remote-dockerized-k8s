@@ -10,8 +10,7 @@ services:
 
 
   ynginx:
-      image: localhost:5000/utube/ynginx:2018
-
+      image: img-utube-nginx:2018
       links:
        - yremote
       ports:
@@ -21,8 +20,7 @@ services:
 
 
   yremote:
-       image: localhost:5000/utube/yremote:2018
-
+       image: img-utube-remote:2018
        links:
         - mongo
        ports:
