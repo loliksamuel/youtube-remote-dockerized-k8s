@@ -13,7 +13,7 @@ create app image using docker build
 deploy app.
 ------------
 choose 1 of the 2 options
- - 1. docker-compose up -d
+ - 1. docker-compose up --build
  - 2. kubernetes - (k8s) 
  
 2.1 create the cluster : using 
