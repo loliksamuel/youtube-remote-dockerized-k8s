@@ -34,11 +34,12 @@ note:
  you can deploy Docker on multiple machines and manage them altogether as a single pool of resources. 
  There are several solutions that you can use to orchestrate your containers on multiple machines using docker.
 You can use either :
-#### Docker Swarm
-#### Kubernetes
-#### Mesos/Marathon
-#### Fleet. (there might be others as this is a fast-moving area). 
-#### Amazon ECS.
+-1. Kubernetes
+-2. Amazon ECS.
+-3. Docker Swarm
+-3. Mesos/Marathon
+-4. Fleet. (there might be others as this is a fast-moving area). 
+
 
 2.3 deploy using kubernetes or helm.sh
 ```sh
