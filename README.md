@@ -30,8 +30,17 @@ kubectl cluster-info
 or 
 kubectl get nodes
 ```
+note:
+ you can deploy Docker on multiple machines and manage them altogether as a single pool of resources. 
+ There are several solutions that you can use to orchestrate your containers on multiple machines using docker.
+You can use either :
+#### Docker Swarm
+#### Kubernetes
+#### Mesos/Marathon
+#### Fleet. (there might be others as this is a fast-moving area). 
+#### Amazon ECS.
 
-2.3 deply using kebernetes or helm.sh
+2.3 deploy using kubernetes or helm.sh
 ```sh
 kubectl delete deployments --all &&  kubectl delete pods   --all &&  kubectl delete services --all
 to convert docker-compose.yml to kubernetes, u can use : 
